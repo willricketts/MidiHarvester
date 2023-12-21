@@ -22,7 +22,13 @@ defmodule MidiHarvester do
     ],
     sega: ["master", "genesis", "gamegear", "saturn", "dreamcast", "segacd", "32x"],
     sony: ["ps1", "ps2", "ps3", "ps4", "psp"],
-    microsoft: ["xbox", "xbox360"]
+    microsoft: ["xbox", "xbox360"],
+    nec: ["tg16", "tduo", "sgx", "pcfx"],
+    snk: ["neogeo", "neogeopocket"],
+    atari: ["2600", "7800", "lynx"],
+    mattel: ["intellivision"],
+    coleco: ["colecovision"],
+    magnavox: ["odyssey2"],
   }
   @base_url "https://www.vgmusic.com/music/console"
 
@@ -68,7 +74,7 @@ defmodule MidiHarvester do
   end
 
   defp download_file(platform, console, file_name) do
-    IO.puts("Downloading #{file_name}")
+    IO.puts("- #{file_name}")
 
     url = "#{@base_url}/#{platform}/#{console}/#{file_name}"
     file = HTTPoison.get!(url)

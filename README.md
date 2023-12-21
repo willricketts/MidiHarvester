@@ -1,21 +1,20 @@
 # MidiHarvester
 
-**TODO: Add description**
+I love video game music. I especially love using video game music to compose other music. When I saw the post [Gameboy MUsic and Sound Archive For MIDI](https://news.ycombinator.com/item?id=38706914) on Hacker News this morning, I was stoked! Sadly, you have to download each MIDI file one at a time, and there isn't a "download all" button. I decided to put together a little program to do this for me, and then extended it to harvest all of the other MIDI files they have as well.
 
-## Installation
+## Get started
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `midi_harvester` to your list of dependencies in `mix.exs`:
+```
+mix deps.get
 
-```elixir
-def deps do
-  [
-    {:midi_harvester, "~> 0.1.0"}
-  ]
-end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/midi_harvester>.
+## Run the thing
 
+Open an iEX shell with `iex -S mix`:
+
+```
+iex> MidiHarvester.run()
+```
+
+Sit back and watch it rain MIDI files
