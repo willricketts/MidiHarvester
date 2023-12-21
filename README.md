@@ -6,7 +6,6 @@ I love video game music. I especially love using video game music to compose oth
 
 ```
 mix deps.get
-
 ```
 
 ## Run the thing

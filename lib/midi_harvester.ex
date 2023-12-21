@@ -28,7 +28,7 @@ defmodule MidiHarvester do
     atari: ["2600", "7800", "lynx"],
     mattel: ["intellivision"],
     coleco: ["colecovision"],
-    magnavox: ["odyssey2"],
+    magnavox: ["odyssey2"]
   }
   @base_url "https://www.vgmusic.com/music/console"
 
